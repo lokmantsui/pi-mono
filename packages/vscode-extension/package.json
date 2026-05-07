@@ -1,0 +1,23 @@
+{
+	"name": "pi-vscode",
+	"displayName": "Pi Coding Agent",
+	"description": "Passes active VS Code editor file and selection context to the Pi coding agent",
+	"version": "0.1.0",
+	"publisher": "pi-mono",
+	"engines": {
+		"vscode": "^1.80.0"
+	},
+	"categories": ["AI", "Other"],
+	"activationEvents": ["*"],
+	"main": "./dist/extension.js",
+	"scripts": {
+		"compile": "tsc -p tsconfig.json",
+		"watch": "tsc -p tsconfig.json --watch",
+		"package": "vsce package --no-dependencies"
+	},
+	"devDependencies": {
+		"@types/node": "^20.0.0",
+		"@types/vscode": "^1.80.0",
+		"typescript": "^5.0.0"
+	}
+}
